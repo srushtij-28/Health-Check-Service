@@ -1,0 +1,46 @@
+🧠 Why This Is Important
+
+In production, orchestrators and load balancers continuously check if a service is healthy.
+
+Without health checks:
+Client
+   ↓
+❌ Down Server
+
+With health checks:
+           Load Balancer
+           /           \
+      Healthy        Unhealthy
+       Server           Server
+         ✔               ❌
+
+Benefits:
+	•	✅ Automatic failure detection
+	•	✅ Better uptime
+	•	✅ Faster recovery
+	•	✅ Improved monitoring
+
+⸻
+
+Used By
+	•	Kubernetes
+	•	Docker Swarm
+	•	AWS ECS
+	•	Nginx
+	•	HAProxy
+
+⸻
+
+🛠 Tech Stack
+	•	Python
+	•	Flask
+	•	psutil
+
+⸻
+
+📂 Project Structure
+health-check-service/
+│
+├── app.py
+├── requirements.txt
+└── README.md
